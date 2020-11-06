@@ -6,10 +6,10 @@ To run accross the local network navigate to te msi_reviewer folder and run `shi
 
 This can then be accessed at `http://computer_name:1234` or `http://computer_ip_address:1234`
 
-##Inputs
+## Inputs
 A folder fontaining `.png` or `.jpg` files that you wish to rate The host of the shiny app must have read and write permissions to this folder.
 
-##Use
+## Use
 - Run the app
 - Paste the full folder path into the folder text box
 - Wait for the first image to load
