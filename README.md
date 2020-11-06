@@ -1,6 +1,7 @@
 # msi_reviewer
 Shiny app for rapid review of single ion images
 
+<img width="964" alt="Screenshot" src="https://github.com/NICE-MSI/simple_image_reviewer/blob/main/msi_reviewer.png?raw=true">
 
 
 ## Setup
