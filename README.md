@@ -7,7 +7,11 @@ Shiny app for rapid review of single ion images
 ## Setup
 This is a Shiny web application.   
 You'll need to have the `tidyverse` and `shiny` packages installed.  
+
+**Run on local computer**: 
 You can run the application by clicking the 'Run App' button when you have app.R open in RStudio.  
+
+**Run accross local network**: 
 To run accross the local network navigate to the simple_image_reviewer folder and run `shiny::runApp(port = 1234, host = "0.0.0.0")`.  
 
 This can then be accessed at `http://computer_name:1234` or `http://computer_ip_address:1234`
