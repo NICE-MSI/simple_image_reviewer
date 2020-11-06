@@ -1,28 +1,20 @@
 # msi_reviewer
 Shiny app for rapid review of single ion images
 
-Bellow is an idealised version of what could be the inputs, workflow, and outputs of this GUI, so it can be used for peak picking algorithm assertion
-## Inputs
-  + csv table containing for each peak
-    - mean measured mz (over all peaks aligned)
-    - standard deviation of measured mz (over all peaks aligned)
-    - signal to noise ratio
-    - any other peak quality metric
-  + images (one per peak) representing the single ion image next to the representation of the neighbourhood of this peak in the spectral domain
+This is a Shiny web application. You can run the application by clicking the 'Run App' button when you have app.R open in RStudio
+To run accross the local network navigate to te msi_reviewer folder and run `shiny::runApp(port = 1234, host = "0.0.0.0")`
 
-## Workflow
-  + An expert starts the GUI;
-  + Indicates the address of a folder which as the same structure as the output from Teresa's pipeline
-  + the program fetches the single ion images and the peaks informations table
-  + the program picks a mz value "randomly", it can be a peak which was picked or rejected by the algorithm
-  + the GUI presents the single ion image along with the neighbourhood of the peak in the spectral domain (and quality statistics?) to the user
-  + the user is asked to qulify the peak/single ion image as good, bad, or unknown (and to justify if bad?)
-  
-## Outputs
-After evaluation of the peaks by experts, a table is created containing
-  + mz value
-  + peak quality metrics
-  + picked by the algorithm (Y/N)
-  + picked by the users (percentage)
-  + (percentage of each reason to reject ?)
-A classification/regression analysis based on this table
+This can then be accessed at `http://computer_name:1234` or `http://computer_ip_address:1234`
+
+##Inputs
+A folder fontaining `.png` or `.jpg` files that you wish to rate The host of the shiny app must have read and write permissions to this folder.
+
+##Use
+- Run the app
+- Paste the full folder path into the folder text box
+- Wait for the first image to load
+- Rate the image as "good", "unsure" or "bad
+- Wait for the next image to load
+- Repeat until you run our of images
+- Press save
+- Navigate to the folder path in your explorer - the csv file will contain ranking results with a unique ID.
