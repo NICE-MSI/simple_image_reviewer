@@ -1,0 +1,7 @@
+image_number,image_name,swipe,mz,name,adduct
+6,msi_reviewer\test_data/puppy3.jpg,good,NA,NA,NA
+5,msi_reviewer\test_data/puppy2.jpg,good,NA,NA,NA
+4,msi_reviewer\test_data/puppy1.jpg,good,NA,NA,NA
+3,msi_reviewer\test_data/pig3.jpg,good,NA,NA,NA
+2,msi_reviewer\test_data/pig2.jpg,good,NA,NA,NA
+1,msi_reviewer\test_data/pig1.jpg,unsure,NA,NA,NA
